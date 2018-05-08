@@ -54,14 +54,38 @@
 		C6C8EED620A195F900E358EE /* windows-shopper */ = {
 			isa = PBXGroup;
 			children = (
+				C6C8EEEB20A19C0000E358EE /* Views */,
+				C6C8EEEA20A19BF800E358EE /* Models */,
+				C6C8EEE920A19BF000E358EE /* Controllers */,
 				C6C8EED720A195F900E358EE /* AppDelegate.swift */,
-				C6C8EED920A195F900E358EE /* ViewController.swift */,
 				C6C8EEDB20A195F900E358EE /* Main.storyboard */,
 				C6C8EEDE20A195FE00E358EE /* Assets.xcassets */,
 				C6C8EEE020A195FE00E358EE /* LaunchScreen.storyboard */,
 				C6C8EEE320A195FE00E358EE /* Info.plist */,
 			);
 			path = "windows-shopper";
+			sourceTree = "<group>";
+		};
+		C6C8EEE920A19BF000E358EE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C6C8EED920A195F900E358EE /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C6C8EEEA20A19BF800E358EE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C6C8EEEB20A19C0000E358EE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
