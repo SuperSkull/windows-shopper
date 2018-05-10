@@ -17,6 +17,8 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let tapGestureBackground = UITapGestureRecognizer(target: self, action: #selector(self.backgroundTapped(_:)))
+        self.view.addGestureRecognizer(tapGestureBackground)
         // Do any additional setup after loading the view, typically from a nib.
         let btnCalculator = UIButton(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 60))
 //        btnCalculator.backgroundColor = #colorLiteral(red: 1, green: 0.5763723254, blue: 0, alpha: 1)
@@ -53,7 +55,9 @@ class MainViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    @objc func backgroundTapped(_ sender: UITapGestureRecognizer) {
+        self.view.endEditing(true)
+    }
 }
 
